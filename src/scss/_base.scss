@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+%section-default {
+    min-height: 100vh;
+    position: relative;
+    scroll-snap-align: start;
+}
