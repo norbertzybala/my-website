@@ -1,0 +1,46 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5% 0 5%;
+    color: #fff;
+    z-index: 1;
+
+    &__logo-link {
+        font-size: 1em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-shadow: 1px -1px 1px rgba(66, 68, 90, 1);
+    }
+
+    &__menu-icons {
+        position: relative;
+        font-size: 1.5em;
+
+        @include min-width(medium) {
+            display: none;
+        }
+    }
+
+    &__close-icon {
+        color: rgb(171, 6, 6);
+        padding-top: .5em;
+        font-size: 1.5em;
+    }
+
+    &__burger-icon,
+    &__close-icon {
+        display: none;
+        cursor: pointer;
+    }
+
+    &__burger-icon--show,
+    &__close-icon--show {
+        display: block;
+    }
+}
