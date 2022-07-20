@@ -4,10 +4,13 @@
     background-size: 100% 100%;
     min-height: 100vh;
     object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__header {
-        @include center-absolute;
         width: 70%;
+        margin: 40px;
     }
 
     &__title {
