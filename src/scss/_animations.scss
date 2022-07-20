@@ -19,3 +19,13 @@
         opacity: 1;
     }
 }
+
+@keyframes menu-link-underline {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
