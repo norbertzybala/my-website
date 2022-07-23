@@ -134,7 +134,7 @@
         flex-direction: column;
 
         @include min-width(medium) {
-            padding: 0 30px;
+            padding: 0 20px;
             margin: 0 10px;
 
             &::after {
@@ -142,9 +142,8 @@
                 background-color: #fff;
                 width: 100%;
                 height: 1px;
-                padding: 0 5px;
                 transform: scale(0, 1);
-                transition: 0.4s linear;
+                transition: 0.3s linear;
             }
         }
     }
