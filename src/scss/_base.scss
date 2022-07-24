@@ -11,15 +11,27 @@ html {
 
 body {
     font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
 }
 
 section {
     min-height: 100vh;
     position: relative;
     scroll-snap-align: start;
+    transform-origin: 50% 50%;
+    perspective: 300px;
+    z-index: -1;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+html.upsidedown {
+    filter: sepia(60%);
+}
+
+.content {
+    min-height: 100vh;
 }

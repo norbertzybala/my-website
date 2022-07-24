@@ -1,10 +1,9 @@
 :root {
     --home-background-color: royalblue;
     --home-font-size: clamp(2.5em, 7vw, 5.5em);
-
-    --aside-border-item-color: #43c87f;
-    --aside-background-item-color: #43c87f;
 }
+
+$aside-item-color: #43c87f;
 
 $breakpoints: (
     'verySmall': 580px,

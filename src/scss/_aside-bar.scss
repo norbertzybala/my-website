@@ -9,7 +9,6 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    z-index: 1;
 
     @include min-width(medium) {
         right: 10px;
@@ -17,14 +16,15 @@
     }
 
     &__item {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        border: 2px solid var(--aside-border-item-color);
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        border: 2px solid $aside-item-color;
     }
 
     &__item--active {
-        background-color: var(--aside-background-item-color);
+        background-color: lighten($aside-item-color , 15%);
         transition: background-color .5s;
+        box-shadow: 0px 0px 1px 1px $aside-item-color;
     }
 }

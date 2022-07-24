@@ -4,9 +4,12 @@
     background-size: 100% 100%;
     min-height: 100vh;
     object-fit: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     &__header {
         width: 70%;
