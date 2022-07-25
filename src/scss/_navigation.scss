@@ -120,6 +120,10 @@
             &:hover a.menu__link::after {
                 transform: scale(1);
             }
+
+            &:hover .menu__upsidedown-btn {
+                opacity: 1;
+            }
         }
     }
 
@@ -146,6 +150,12 @@
                 transition: 0.3s linear;
             }
         }
+    }
+
+    &__upsidedown-btn {
+        width: 120px;
+        display: block;
+        opacity: 0.8;
     }
 
     &__github-icon {
